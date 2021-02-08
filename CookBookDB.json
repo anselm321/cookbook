@@ -1,0 +1,23 @@
+[
+ {
+   "Name": "Fisksoppa",
+   "Ingredients": "2 dl vatten\n1 hg fisk\npersilja",
+   "HowTo": "Skär\nkoka",
+   "Region": "",
+   "Type": "Fest"
+ },
+ {
+   "Name": "Tårta",
+   "Ingredients": "1 dl mjöl\n2 dl grädde",
+   "HowTo": "Visa ingredienserna\nBygg tårta",
+   "Region": "Sverige",
+   "Type": "Baka"
+ },
+ {
+   "Name": "Banankaka",
+   "Ingredients": "1 banan\n1 dl grädde",
+   "HowTo": "Visa bananerna\nBygg kaka",
+   "Region": "",
+   "Type": "Baka"
+ }
+]

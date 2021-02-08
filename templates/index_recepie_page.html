@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>{{ title }}</title>
+    </head>
+    <body>
+    
+        Namn: {{ Name }} <br>
+        Ingedienser: <br>
+        {% autoescape false %}
+        {{Ingredients}}
+        {% endautoescape %}     
+        <br><br>
+        How to: <br>
+        {% autoescape false %}
+        {{HowTo}}
+        {% endautoescape %}    
+        <br><br>
+        Region:<br>
+        {{Region}}<br>
+        Keyword:<br>
+        {{Keyword}}<br>
+ 
+
+    </body>
+</html>

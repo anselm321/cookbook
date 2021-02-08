@@ -1,0 +1,170 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <META HTTP-EQUIV="CACH-eCONTROL" CONTENT="NO-CACHE">
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <meta name="gwt:property" content="locale=sv_SE"/>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" >
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" >
+  <!-- iPhone stuff -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="apple-touch-icon" href="images/icon_iphone.png"/>
+  <meta name="viewport" content="width=980" />
+  <title>dinarecept.se</title>
+  <style>
+html {-webkit-text-size-adjust:none}
+body{margin: 0 12px; padding: 0; background-color: #dddddd; }
+center,table,td,tr,th {margin: 0; padding: 0; border: 0; border-spacing:0; border-collapse: collapse; }
+body,td,th,a,div,p{ font: normal 12px "lucida grande", tahoma, verdana, arial, sans-serif; color: #000000;}
+a:link,.w,.w a:link{color:#006699}
+a:visited{color:#006699}
+a:active{color:#ff0000}
+
+/* RoundedWidget */
+.rw-et, .rw-eb, .rw-dt, .rw-db, .rw-dm { width: 100%; }
+.rw-dml, .rw-dmr { height: 100%; }
+
+.rw-et { height: 9px; padding: 0; margin: 0; }
+.rw-etl { width: 9px; height: 9px; background: url("images/rw-etl.png") no-repeat 0 0;}
+.rw-etr { width: 9px; height: 9px; background: url("images/rw-etr.png") no-repeat 0 0;}
+.rw-etc { height: 9px; background: url("images/rw-etc.png") repeat 0 0;}
+
+.rw-eb { height: 9px; padding: 0; margin: 0; }
+.rw-ebl { width: 9px; height: 9px; background: url("images/rw-ebl.png") no-repeat 0 0;}
+.rw-ebr { width: 9px; height: 9px; background: url("images/rw-ebr.png") no-repeat 0 0;}
+.rw-ebc { height: 9px; background: url("images/rw-ebc.png") repeat 0 0;}
+
+.rw-dt { height: 27px; padding: 0; margin: 0; }
+.rw-dtl { width: 9px; height: 27px; background: url("images/rw-dtl.png") no-repeat 0 0;}
+.rw-dtr { width: 9px; height: 27px; background: url("images/rw-dtr.png") no-repeat 0 0;}
+.rw-dtc { height: 27px; background: url("images/rw-dtc.png") repeat 0 0;}
+
+.rw-dm { padding: 0; margin: 0; }
+.rw-dml { width: 5px; background: url("images/rw-dml.png") repeat 0 0;}
+.rw-dmr { width: 5px; background: url("images/rw-dmr.png") repeat 0 0;}
+.rw-dmc { background-color: #ffffff;}
+
+/* Share recipe */
+.rv {width: 675px;}
+.rv .rw-etc, .rv .rw-ebc { width: 657px;}
+.rv .rw-dmc { width: 665px; }
+.rv-i { margin: 0px 8px; width: 649px; }
+
+.rv-shareinfo { padding: 4px 0 8px;  color: #996633; font-style: italic; font-size: 14px; white-space: normal; }
+.rv-title { padding: 0 0 12px; font: bold 34px/105% "helvetica neue", helvetica, arial, sans-serif; letter-spacing:-2px; }
+.rv-quickfacts { width: 564px; font-size:11px; display: inline; }
+.rv-float { float: right; width: 242px; margin-top: -4px; margin-left: 8px; }
+.rv-img1 { margin: 0 -8px 8px 0; }
+.rv-img { margin: 0 -8px 8px 0; }
+.rv-descr, .rv-descr-img { color: #669933; font-style: italic; font-size: 14px; white-space: normal; }
+.rv-descr { margin: 4px 0 4px; }
+.rv-descr-img { margin: -4px 0 4px; }
+.rv-ingr-h { margin-top: 1em; margin-bottom: 2px; font: bold 12px/105% "helvetica neue", helvetica, arial, sans-serif; }
+.rv-ingr-i { padding-left: 1em; text-indent: -1em; white-space: normal;  }
+.rv-ingr-title { font-weight: normal; font-style: italic; margin-top: 1em; white-space: normal; }
+.rv-instr-h { margin-top: 1em; margin-bottom: 2px; font: bold 12px/105% "helvetica neue", helvetica, arial, sans-serif; }
+.rv-instr-title { font-style: italic; margin-bottom: 0.5em; white-space: normal; }
+.rv-instr-p { margin-bottom: 0.5em; white-space: normal; }
+.rv-hr { margin: 0px -8px 4px; border-top: 1px solid #ababab; }
+.rv-date { font-size: 10px; color: #999999; padding: 1px 0px; }
+.rv-source { padding: 1px 0px; }
+.rv-source-h { font-size: 10px; display: inline; }
+.rv-source-p { font-size: 10px; display: inline; }
+.rv-source-a, .rv-source-a a { font-size: 10px; display: inline; }
+
+/* Info panel */
+#info .rw-etc, #info .rw-ebc { width: 657px;}
+#info .rw-dmc { width: 665px; }
+.info-i { margin: 10px 15px; }
+.info-i ul { list-style-type:square; }
+.info-i li { margin-bottom: 8px; }
+.info-i p, .info-i li { font-size: 13px; }
+.img img { width: 200px; height: 200px; margin: 0 0 15px 15px; }
+.info-i .img { float: right; }
+.info-i h1 { margin-top: 0; font: bold 26px/105% "helvetica neue", helvetica, arial, sans-serif; }
+.mobile { margin-top: 30px; }
+.mobimg { float: left; }
+.mobimg img {}
+.notes {font-size: 9px; color: #666666; }
+
+/* Login panel */
+.login .rw-dtc, .login .rw-ebc { width: 282px;}
+.login .rw-dmc { width: 290px; }
+.login-t { height: 19px; margin: 8px 4px 0; }
+.login-form { margin: 0px 8px; width: 274px; }
+.login-col1 { text-align: right; }
+.login .gwt-TextBox, .login .gwt-PasswordTextBox { margin: 4px 2px; width: 94%; }
+.login .gwt-Button { margin: 4px 2px; }
+.login-link { display: inline; margin-left: 4px; }
+.login-link a { font-size: 10px; white-space: nowrap; }
+
+/* NewAccount panel */
+.na { margin: 5px 0 0; }
+.na .rw-dtc, .login .rw-ebc { width: 282px;}
+.na .rw-dmc { width: 290px; }
+.na-t { height: 19px; margin: 8px 4px 0; }
+.na-form { margin: 0px 8px; width: 274px; }
+.na-col1 { text-align: right; }
+.na .gwt-TextBox { margin: 4px 2px; width: 94%; }
+.na .gwt-Button { margin: 4px 2px; }
+.na-info { margin: 5px 0; }
+.na-btn { width: 300px; height: 41px; padding: 3px 4px 5px; border: none; text-align: center; color: #006699; font-size: 12px; background: url("images/account_btn.png") no-repeat 0 0;}
+
+.b { margin: 10px 0; }
+.b-a, .b a{ font-size: 10px; display: inline; }
+.b-p { font-size: 10px; display: inline; color: #666666; }
+
+  </style>
+  <script language='javascript' src='mb.recipe.loginmain.LoginMain.nocache.js'></script>
+</head>
+<body><table width="980" style="margin: 0 auto;">
+<tr valign="bottom">
+<td colspan="2" width="980" height="120"><a href="http://dinarecept.se"><img src="images/titlebar.png" alt="dinarecept.se" border="0" style="margin: 0 0 10px;"/></a></td>
+</tr>
+<tr valign="top">
+  <td width="675" id="info" style="margin-right: 5px;">
+      <div id="share"></div>
+      <table class="rw"><tr><td><table class="rw-et"><tr><td class="rw-etl"></td><td class="rw-etc"></td><td class="rw-etr"></td></tr></table></td></tr><tr><td><table class="rw-dm"><tr><td class="rw-dml"></td><td class="rw-dmc"><div class="info-i">
+      <!-- info begin -->
+
+<div class="img"><img src="images/front_garnish.jpg"><br/><img src="images/front_dessert.jpg"></div>
+<h1>Dina recept på nätet</h1>
+<p>Samla alla dina recept på ett ställe. Snabbt, enkelt och utan krångel. Helt gratis.</p>
+
+<ul>
+<li>Lägg till dina egna recept eller importera recept från andra sajter.</li>
+<li>Ordna dina recept med etiketter eller sök med valfri text.</li>
+<li>Kom åt dina recept överallt.</li>
+<li>Nu med offline-stöd i mobilen!</li>
+</ul>
+
+<div class="mobile"><div class="mobimg"><img src="images/front_iphone.png" height="89" width="150"></div>
+    Kom åt dina recept i mobilen. Skriv bara
+<a style="font-weight: bold; text-decoration: none;" href="http://m.dinarecept.se">m.dinarecept.se</a>
+i webbläsaren i din mobil.
+<div class="notes">
+    *) Dina recept i mobilen kräver javascript. Fungerar bl a i iPhone och i Android-mobiler.
+</div>
+</div>
+      <!-- info end -->
+      </div></td><td class="rw-dmr"></td></tr></table></td></tr><tr><td><table class="rw-eb"><tr><td class="rw-ebl"></td><td class="rw-ebc"></td><td class="rw-ebr"></td></tr></table></td></tr></table>
+  </td>
+  <td width="300" id="login"></td>
+</tr>
+<tr><td colspan="2" id="bottom" align="center">
+<div class="b"><a class="b-a" href="about.html">Om dinarecept.se</a></div>
+</td></tr>
+</table>
+<!-- history support --><iframe src="javascript:''" id="__gwt_historyFrame" style="width:0;height:0;border:0"></iframe>
+<!-- analytics -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-10396119-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>
