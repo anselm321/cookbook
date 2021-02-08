@@ -19,6 +19,6 @@ def FetchRecepie(Index):
     Namn =CookBook.iloc[Index]
     return Namn
 
-Recept= FetchRecepie(2)
-print( Recept.Name)
-print(Recept.Ingredients)
+#Recept= FetchRecepie(2)
+#print( Recept.Name)
+#print(Recept.Ingredients)
